@@ -1,0 +1,57 @@
+{
+  "name": "scope-funs",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "Porting the scope functions from the Kotlin standard library",
+  "author": "Maxim Molochkov <klaseca@gmail.com> (https://github.com/klaseca)",
+  "keywords": [
+    "kotlin",
+    "scope",
+    "scope functions",
+    "let",
+    "also",
+    "takeIf",
+    "takeUnless"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/klaseca/scope-funs#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klaseca/scope-funs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/klaseca/scope-funs/issues"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepare": "husky",
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prerelease": "npm run test && npm run build",
+    "release": "bumpp && npm publish"
+  },
+  "devDependencies": {
+    "bumpp": "^10.3.2",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.7.4",
+    "tsdown": "^0.18.1",
+    "typescript": "^5.9.3",
+    "vitest": "4.0.16"
+  }
+}
