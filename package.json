@@ -1,7 +1,7 @@
 {
   "name": "scope-funs",
   "type": "module",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Porting the scope functions from the Kotlin standard library",
   "author": "Maxim Molochkov <klaseca@gmail.com> (https://github.com/klaseca)",
   "keywords": [
