@@ -22,8 +22,15 @@
   "bugs": {
     "url": "https://github.com/klaseca/scope-funs/issues"
   },
-  "engines": {
-    "node": ">=22"
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": ">=24.14"
+    },
+    "packageManager": {
+      "name": "npm",
+      "version": ">=11"
+    }
   },
   "exports": {
     ".": "./dist/index.js",
@@ -46,12 +53,12 @@
     "release": "bumpp && npm publish"
   },
   "devDependencies": {
-    "bumpp": "^10.3.2",
+    "bumpp": "^11.1.0",
     "husky": "^9.1.7",
-    "lint-staged": "^16.2.7",
-    "prettier": "^3.7.4",
-    "tsdown": "^0.18.1",
-    "typescript": "^5.9.3",
-    "vitest": "4.0.16"
+    "lint-staged": "^17.0.4",
+    "prettier": "^3.8.3",
+    "tsdown": "^0.22.0",
+    "typescript": "^6.0.3",
+    "vitest": "4.1.5"
   }
 }
